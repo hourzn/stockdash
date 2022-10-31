@@ -7,6 +7,7 @@ import Account from './components/Auth/Authorized';
 import Auth from './components/Auth/Unauthorized';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+// set font across all material ui components
 const theme = createTheme({
     typography: {
         allVariants: {
@@ -17,7 +18,7 @@ const theme = createTheme({
 
 export default function App() {
     const [session, setSession] = useState(null);
-
+    // Listen for changes to the user's session
     useEffect(() => {
         supabase.auth.getSession().then(({ data: { session } }) => {
             setSession(session);
@@ -30,6 +31,7 @@ export default function App() {
 
     return (
         <ThemeProvider theme={theme}>
+            {/* display login / authorized */}
             <BrowserRouter>
                 {!session ? (
                     <Auth />

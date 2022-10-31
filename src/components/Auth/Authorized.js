@@ -18,6 +18,8 @@ function Authorized(props) {
     const signOut = async () => {
         await supabase.auth.signOut();
     };
+    // Search for stock data based on flag and symbol from user input
+    // used refs instead of state to avoid re-rendering
     const handleAddStock = (flag) => {
         if (flag === 1) {
             setStockData1(inputRef1.current.value);
@@ -66,10 +68,11 @@ function Authorized(props) {
                                     onClick={() => {
                                         handleAddStock(1);
                                     }}>
-                                    Add
+                                    Search
                                 </Button>
                             </div>
                             <div>
+                                {/* display chart based on user inputted symbol */}
                                 <AdvancedRealTimeChart
                                     theme='dark'
                                     width={1840}
@@ -98,7 +101,7 @@ function Authorized(props) {
                                     onClick={() => {
                                         handleAddStock(2);
                                     }}>
-                                    Add
+                                    Search
                                 </Button>
                             </div>
                             <div>
@@ -130,7 +133,7 @@ function Authorized(props) {
                                     onClick={() => {
                                         handleAddStock(3);
                                     }}>
-                                    Add
+                                    Search
                                 </Button>
                             </div>
                             <div>

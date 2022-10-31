@@ -4,13 +4,13 @@ import Button from '@mui/material/Button';
 import { FcGoogle } from 'react-icons/fc';
 import { RiFacebookBoxFill } from 'react-icons/ri';
 import { supabase } from '../../supabaseClient';
-import Alert from '@mui/material/Alert';
 
 function Unauthorized() {
     const [loading, setLoading] = useState(false);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    // Sign in with email:password w/ supabase
     const signInNonProvider = async (e) => {
         e.preventDefault();
         try {
@@ -30,6 +30,7 @@ function Unauthorized() {
         }
     };
 
+    //Sign up with email:password w/ supabase
     const signUpNonProvider = async (e) => {
         e.preventDefault();
         try {
@@ -59,7 +60,7 @@ function Unauthorized() {
             }
         }
     };
-
+    // Sign in with Google w/ supabase
     const signInWithGoogle = async (e) => {
         e.preventDefault();
 
@@ -75,7 +76,7 @@ function Unauthorized() {
             setLoading(false);
         }
     };
-
+    // Sign in with Facebook w/ supabase
     const signInWithFacebook = async (e) => {
         e.preventDefault();
         try {
@@ -97,6 +98,7 @@ function Unauthorized() {
                 <form>
                     <h3 id='title'>Stock Dashboard Login</h3>
                     <label for='username'>Username</label>
+                    {/* get user and password */}
                     <input
                         type='text'
                         placeholder='Email'
@@ -132,6 +134,7 @@ function Unauthorized() {
                             Sign Up
                         </Button>
                     </div>
+                    {/*  sign in with a provider here google / fb */}
                     <label for='socials-login'>Sign in with a provider:</label>
                     <div className='socials-login'>
                         <div className='social'>
