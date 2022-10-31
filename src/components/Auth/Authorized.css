@@ -1,0 +1,34 @@
+.authorized {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkgrey);
+}
+
+.authorized-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    height: 100vh;
+    padding: 0 1rem;
+    margin: auto;
+  }
+
+  .welcome-container
+  {
+    position: absolute;
+    top: 0;
+    left: 2vw;
+  }
+
+  .authorized-content-container-body {
+    position: absolute;
+    top: 16vh;
+    left: 2vw;
+  }
+
+  .chart-label {
+    padding-bottom: 20px;
+    
+  }

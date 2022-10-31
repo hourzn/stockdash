@@ -1,0 +1,60 @@
+/* Center all elements */
+.unauthorized-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+/* Create card for form */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    min-width: 20%;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1.5em 1.5em;
+    text-align: center;
+
+    flex-direction: column;
+
+}
+/* Adjust title */
+#title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+.signin-signup-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: .25em;
+    margin-bottom: .5em;
+}
+
+input {
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px;
+    width: 70%;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: rgba(255,255,255,0.1);
+    padding: 0.25em 0.25em 0.25em 0.25em;
+    margin-bottom: .25em;
+}
