@@ -50,7 +50,7 @@ function Authorized(props) {
                         <div className='authorized-content-container-body'>
                             <div className='chart-label'>
                                 <TextField
-                                    label='Add a stock to your watch list'
+                                    label='Search for a stock'
                                     sx={{ m: 0, width: '24ch' }}
                                     InputProps={{
                                         startAdornment: (
@@ -83,7 +83,7 @@ function Authorized(props) {
                             </div>
                             <div className='chart-label'>
                                 <TextField
-                                    label='Add a stock to your watch list'
+                                    label='Search for a stock'
                                     sx={{ m: 0, width: '24ch' }}
                                     InputProps={{
                                         startAdornment: (
@@ -115,7 +115,7 @@ function Authorized(props) {
                             </div>
                             <div className='chart-label'>
                                 <TextField
-                                    label='Add a stock to your watch list'
+                                    label='Search for a stock'
                                     sx={{ m: 0, width: '24ch' }}
                                     InputProps={{
                                         startAdornment: (
