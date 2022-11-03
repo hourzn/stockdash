@@ -30,5 +30,9 @@
 
   .chart-label {
     padding-bottom: 20px;
-    
+  
+  }
+
+  .sign-out-button {
+    right: 0px;
   }

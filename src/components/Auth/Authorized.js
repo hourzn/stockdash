@@ -37,8 +37,9 @@ function Authorized(props) {
                         <h2>Stocks Dashboard</h2>
                         Welcome {props.session.user.email}{' '}
                         <Button
+                            className='sign-out-button'
                             onClick={signOut}
-                            style={{ marginLeft: '10px' }}
+                            // style={{ marginLeft: '10px' }}
                             variant='contained'
                             size='small'>
                             Sign out
